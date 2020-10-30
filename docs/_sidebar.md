@@ -14,4 +14,9 @@
   * [linux-xeno](zh-cn/device/linux-xeno/linux-xeno.md)
   * [STM32H7](zh-cn/device/stm32h7/stm32h7.md)
   * [intime](zh-cn/device/intime/intime.md)
+
+* HMI触摸屏
+  * [HMI触摸屏](zh-cn/HMI/HMI.md)
+
 * 其他
+ 
