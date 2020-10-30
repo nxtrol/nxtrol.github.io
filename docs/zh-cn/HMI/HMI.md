@@ -26,7 +26,7 @@ LogicView Designer是配合LogicLab使用的HMI触摸屏设计软件，具有很
 
 
 
-LogciaLab连接到设备，将设备中需要的变量传上LogicView Designe，以供我们组态HMI界面。如下图所示：
+LogicLab连接到设备，将设备中需要的变量传上LogicView Designe，以供我们组态HMI界面。如下图所示：
 
 ![](_images\5.png)
 
@@ -65,6 +65,7 @@ LogciaLab连接到设备，将设备中需要的变量传上LogicView Designe，
 ![image-20201029180013820](_images/10.png)
 
 ```c
+
 cnt := cnt + 1;
 
 
@@ -90,6 +91,11 @@ IF bStartPowerAxis1 THEN
 	ELSIF ((drv1_statusword & UINT#16#006F) = UINT#16#0023) THEN
 		drv1_controlword := UINT#16#000F;
 	END_IF;	
+
+ELSIF ((drv1_statusword & UINT#16#007F) = UINT#16#0037 ) THEN
+	drv1_controlword := UINT#16#0006;
+    bServoOnAxis1 := FALSE;
+
 END_IF;
 	
 IF ( (NOT bStartPowerAxis1) AND (drv1_statusword & UINT#16#007F) = UINT#16#0037 ) THEN
@@ -120,16 +126,19 @@ IF bStartPowerAxis2 THEN
 	ELSIF ((drv2_statusword & UINT#16#006F) = UINT#16#0023) THEN
 		drv2_controlword := UINT#16#000F;
 	END_IF;
+
 	
-IF ( (NOT bStartPowerAxis1) AND (drv2_statusword & UINT#16#007F) = UINT#16#0037 ) THEN
-	 drv2_controlword := UINT#16#0006;
-     bServoOnAxis1 := FALSE;
+ELSIF ((drv2_statusword & UINT#16#007F) = UINT#16#0037 ) THEN
+	drv2_controlword := UINT#16#0006;
+    bServoOnAxis1 := FALSE;
+
+END_IF;
 
 IF (breset = true) THEN
 	drv2_controlword := UINT#16#0080  ;
 END_IF;
 IF	(breset = false) THEN
-	drv2_controlword := UINT#16#ff7f & drv2_controlword;
+	drv2_controlword := UINT#16#ff7f & drv1_controlword;
 END_IF;
 ```
 
