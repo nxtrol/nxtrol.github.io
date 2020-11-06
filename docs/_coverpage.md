@@ -1,6 +1,6 @@
-# 上海翌控科技 
+# 上海翌控科技帮助中心
 
-[ Get Started](http://localhost:3000/#/zh-cn/)
+[快速开始](https://docs.nxtrol.com/#/zh-cn/)
 
 
 
@@ -14,6 +14,6 @@
 
 <!-- 背景色 -->
 
-![color](#f0f0f0)
+![color](#639c9c)
 
 
