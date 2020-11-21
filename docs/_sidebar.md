@@ -4,19 +4,17 @@
   * [快速开始](zh-cn/quickstart/quickstart.md)
 
 * 现场总线
-  * [Modbus](zh-cn/fieldbus/modbus/modbus.md)
-  * [CANopen](zh-cn/fieldbus/canopen/canopen.md)
-  * [EtherCAT](zh-cn/fieldbus/ethercat/ethercat.md)
+  * [Modbus](zh-cn/fieldbus/modbus.md)
+  * [CANopen](zh-cn/fieldbus/canopen.md)
+  * [EtherCAT](zh-cn/fieldbus/ethercat.md)
 
 * 设备平台
-  * [树莓派](zh-cn/device/raspberrypi/raspberrypi.md)
-  * [linux-rt](zh-cn/device/linux-rt/linux-rt.md)
-  * [linux-xeno](zh-cn/device/linux-xeno/linux-xeno.md)
-  * [STM32H7](zh-cn/device/stm32h7/stm32h7.md)
-  * [intime](zh-cn/device/intime/intime.md)
+  * [树莓派](zh-cn/platform/raspberrypi.md)
+  * [INtime](zh-cn/platform/intime.md)
+  * [STM32H7](zh-cn/platform/stm32h7.md)
 
 * HMI软件
-* [LogicView](zh-cn/HMI/HMI.md)
+* [LogicView](zh-cn/HMI/LogicView.md)
 
 * LogicLab技术手册
   * [1.介绍](zh-cn/LogicLab技术手册/1.介绍.md)

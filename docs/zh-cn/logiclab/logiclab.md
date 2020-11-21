@@ -1,8 +1,6 @@
 ## 1. IEC61131-3标准软件LogicLab解决方案简介
 
-
-
-LogicLab解决方案方案分为运行在Windows平台上的编程工具与运行在嵌入式平台上的Runtime组件，其中Runtime组件可以支持标准Linux：
+LogicLab解决方案是专门为符合IEC61131-3标准的PLC控制器设计软件平台方案，主要分为运行在Windows平台上的编程工具与运行在控制器平台上的Runtime软件组件，应用LogicLab产品解决方案架构图如下：
 
 ![](_images/1.png)
 
